@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Name | Portfolio</title>
+  <meta name="description" content="Personal portfolio of Your Name.">
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #1e293b;
+      --text: #e2e8f0;
+      --muted: #94a3b8;
+      --accent: #38bdf8;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    nav {
+      position: sticky; top: 0;
+      background: rgba(15, 23, 42, 0.92);
+      backdrop-filter: blur(6px);
+      border-bottom: 1px solid #334155;
+      padding: 14px 24px;
+      display: flex; gap: 24px; justify-content: center;
+    }
+    nav a { color: var(--muted); font-weight: 600; }
+    nav a:hover { color: var(--accent); text-decoration: none; }
+    main { max-width: 900px; margin: 0 auto; padding: 0 24px 64px; }
+    section { padding: 64px 0 8px; }
+    h1 { font-size: clamp(2rem, 6vw, 3.2rem); margin: 0 0 12px; line-height: 1.15; }
+    h2 {
+      font-size: 1.6rem; margin: 0 0 24px;
+      border-left: 4px solid var(--accent); padding-left: 12px;
+    }
+    .eyebrow { color: var(--accent); font-weight: 700; letter-spacing: .08em; text-transform: uppercase; font-size: .85rem; }
+    .statement { font-size: 1.25rem; color: var(--muted); max-width: 700px; }
+    .skills { display: flex; flex-wrap: wrap; gap: 10px; padding: 0; margin: 0; list-style: none; }
+    .skills li {
+      background: var(--card); border: 1px solid #334155;
+      padding: 8px 16px; border-radius: 999px; font-weight: 600;
+    }
+    .grid { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+    .card {
+      background: var(--card); border: 1px solid #334155;
+      border-radius: 12px; padding: 22px;
+      display: flex; flex-direction: column;
+    }
+    .card h3 { margin: 0 0 8px; }
+    .card p { color: var(--muted); margin: 0 0 16px; flex: 1; }
+    .tags { font-size: .8rem; color: var(--muted); margin-bottom: 12px; }
+    .links { display: flex; gap: 16px; font-weight: 600; }
+    footer { text-align: center; color: var(--muted); padding: 32px 24px; border-top: 1px solid #334155; }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+  </nav>
+
+  <main>
+    <!-- 1. PERSONAL STATEMENT -->
+    <section id="about">
+      <div class="eyebrow">Hello, I'm</div>
+      <h1>Your Name</h1>
+      <!-- Replace with ONE impactful sentence about who you are professionally -->
+      <p class="statement">
+        I'm a [your field/major] student who builds [type of work] to solve [kind of problem], with a focus on [your strength].
+      </p>
+    </section>
+
+    <!-- 2. SKILLS -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul class="skills">
+        <li>Python</li>
+        <li>JavaScript</li>
+        <li>HTML &amp; CSS</li>
+        <li>SQL</li>
+        <li>Git &amp; GitHub</li>
+        <li>Data Analysis</li>
+        <li>Problem Solving</li>
+        <li>Team Collaboration</li>
+      </ul>
+    </section>
+
+    <!-- 3. PROJECTS -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Project One</h3>
+          <div class="tags">Python · Data Analysis</div>
+          <p>Two sentences on what you built, the problem it solved, and what you learned or achieved.</p>
+          <div class="links">
+            <a href="https://github.com/your-username/project-one">Code</a>
+            <a href="#">Live Demo</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Project Two</h3>
+          <div class="tags">JavaScript · Web</div>
+          <p>Two sentences on what you built, the problem it solved, and what you learned or achieved.</p>
+          <div class="links">
+            <a href="https://github.com/your-username/project-two">Code</a>
+            <a href="#">Live Demo</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Project Three</h3>
+          <div class="tags">SQL · Dashboard</div>
+          <p>Two sentences on what you built, the problem it solved, and what you learned or achieved.</p>
+          <div class="links">
+            <a href="https://github.com/your-username/project-three">Code</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a href="https://github.com/your-username">GitHub</a> ·
+    <a href="https://www.linkedin.com/in/your-profile">LinkedIn</a> ·
+    <a href="mailto:you@example.com">Email</a>
+  </footer>
+</body>
+</html>
