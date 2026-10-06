@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Parker Walizadeh | Marketing Portfolio</title>
+  <meta name="description" content="Portfolio of Parker Walizadeh, marketing student at Rutgers University.">
+  <style>
+    :root {
+      --bg: #faf7f5;
+      --card: #ffffff;
+      --text: #2b2326;
+      --muted: #6f6468;
+      --accent: #b0405f;
+      --line: #eadfe2;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    nav {
+      position: sticky; top: 0;
+      background: rgba(250, 247, 245, 0.94);
+      backdrop-filter: blur(6px);
+      border-bottom: 1px solid var(--line);
+      padding: 14px 24px;
+      display: flex; gap: 28px; justify-content: center;
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    }
+    nav a { color: var(--muted); font-weight: 600; font-size: .95rem; }
+    nav a:hover { color: var(--accent); text-decoration: none; }
+    main { max-width: 900px; margin: 0 auto; padding: 0 24px 64px; }
+    section { padding: 72px 0 8px; }
+    h1 { font-size: clamp(2.2rem, 7vw, 3.6rem); margin: 0 0 14px; line-height: 1.1; }
+    h2 {
+      font-size: 1.7rem; margin: 0 0 24px;
+      padding-bottom: 8px; border-bottom: 2px solid var(--accent); display: inline-block;
+    }
+    .eyebrow {
+      color: var(--accent); font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
+      font-size: .8rem; font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    }
+    .statement { font-size: 1.3rem; color: var(--muted); max-width: 720px; }
+    .meta { font-family: system-ui, sans-serif; font-size: .9rem; color: var(--muted); }
+    .skills { display: flex; flex-wrap: wrap; gap: 10px; padding: 0; margin: 0; list-style: none;
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
+    .skills li {
+      background: var(--card); border: 1px solid var(--line);
+      padding: 9px 18px; border-radius: 999px; font-weight: 600; font-size: .95rem;
+    }
+    .grid { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+    .card {
+      background: var(--card); border: 1px solid var(--line);
+      border-radius: 12px; padding: 24px;
+      display: flex; flex-direction: column;
+    }
+    .card h3 { margin: 0 0 4px; font-size: 1.2rem; }
+    .tags { font-family: system-ui, sans-serif; font-size: .78rem; color: var(--accent);
+      font-weight: 600; letter-spacing: .03em; margin-bottom: 12px; }
+    .card p { color: var(--muted); margin: 0 0 12px; }
+    .card ul { margin: 0 0 8px; padding-left: 18px; color: var(--muted); font-size: .95rem; }
+    footer { text-align: center; color: var(--muted); padding: 36px 24px; border-top: 1px solid var(--line);
+      font-family: system-ui, sans-serif; }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+  </nav>
+
+  <main>
+    <!-- 1. PERSONAL STATEMENT -->
+    <section id="about">
+      <div class="eyebrow">Marketing Student · Rutgers University</div>
+      <h1>Parker Walizadeh</h1>
+      <p class="statement">
+        I'm a marketing student who turns brands into memorable in-person experiences through visual merchandising, event marketing, and social content.
+      </p>
+      <p class="meta">B.S. Marketing, Rutgers University&ndash;New Brunswick (expected 2029) · Fashion Business Certificate, Vogue College of Fashion</p>
+    </section>
+
+    <!-- 2. SKILLS -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul class="skills">
+        <li>Visual Merchandising</li>
+        <li>Marketing &amp; Branding</li>
+        <li>Event Planning</li>
+        <li>Content &amp; Social Media</li>
+        <li>Customer Engagement</li>
+        <li>Inventory Management</li>
+        <li>Teamwork &amp; Leadership</li>
+      </ul>
+    </section>
+
+    <!-- 3. PROJECTS -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Window &amp; Display Design</h3>
+          <div class="tags">Brandy Melville · Visual Merchandising</div>
+          <p>Designed and refreshed front window and table displays to spotlight new arrivals and keep the store on-brand.</p>
+          <ul>
+            <li>Planned visuals for new collections and promotions with managers</li>
+            <li>Updated displays and mannequins daily to maintain brand consistency</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Community Book Club &amp; Events</h3>
+          <div class="tags">Talking Animals Books · Event Marketing</div>
+          <p>Founded and hosted a high school book club for two years, growing community engagement around the bookstore.</p>
+          <ul>
+            <li>Planned and ran in-store events</li>
+            <li>Built creative displays to improve product visibility and sales</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>New York Fashion Week</h3>
+          <div class="tags">Runway 7 · Event &amp; Content Marketing</div>
+          <p>Supported event marketing and backstage coordination for the Fall/Winter 2026 season.</p>
+          <ul>
+            <li>Managed logistics and event setups for smooth shows</li>
+            <li>Captured photos and content for social media and promotion</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a href="mailto:parker.walizadeh@gmail.com">parker.walizadeh@gmail.com</a>
+    <!-- Add your GitHub or LinkedIn link here if you'd like, e.g.:
+    · <a href="https://github.com/your-username">GitHub</a> -->
+  </footer>
+</body>
+</html>
